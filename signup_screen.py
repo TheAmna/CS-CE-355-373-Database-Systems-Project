@@ -11,6 +11,12 @@ class SignupScreen(QtWidgets.QMainWindow):
         # Load the UI file
         uic.loadUi('signup_fixed.ui', self)
         
+        self.lineName.setStyleSheet("color: black;")
+        self.lineEmail.setStyleSheet("color: black;")
+        self.linePassword.setStyleSheet("color: black;")
+        self.lineCNIC.setStyleSheet("color: black;")
+
+        self.comboRole.setStyleSheet("color: black;")
         # Connect buttons to functions
         self.btnSignup.clicked.connect(self.handle_signup)
         
