@@ -9,6 +9,8 @@ class LoginScreen(QtWidgets.QMainWindow):
         
         # Load the UI file
         uic.loadUi('login.ui', self)
+        self.lineEmail.setStyleSheet("color: black;")
+        self.linePassword.setStyleSheet("color: black;")
         
         # Connect buttons to functions
         self.btnLogin.clicked.connect(self.handle_login)
