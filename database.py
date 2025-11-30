@@ -4,7 +4,7 @@ import pyodbc
 class Database:
     def __init__(self):
         self.server = r'AMNA\MSSQLSERVER2022'
-        self.database = 'Tutorify'
+        self.database = 'TutorifyDatabase'
         self.connection_string = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={self.server};DATABASE={self.database};Trusted_Connection=yes;'
     
     def get_connection(self):
