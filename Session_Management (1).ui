@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>StudentDashboard</class>
- <widget class="QWidget" name="StudentDashboard">
+ <class>SessionWindow</class>
+ <widget class="QWidget" name="SessionWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>550</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Tutorify - Student Dashboard</string>
+   <string>Tutorify - Scheduled Sessions</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #f9fcff;</string>
@@ -29,137 +29,34 @@
     <string notr="true">font-size: 18px; font-weight: bold; color: #1a3c57;</string>
    </property>
    <property name="text">
-    <string>Student Dashboard</string>
+    <string>Scheduled Sessions</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="labelSubject">
+  <widget class="QTableWidget" name="tableSessions">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>40</x>
      <y>80</y>
-     <width>140</width>
-     <height>25</height>
+     <width>620</width>
+     <height>291</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">font-size: 14px; color: #1a3c57;</string>
-   </property>
-   <property name="text">
-    <string>Subject / Course:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineSubject">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>80</y>
-     <width>440</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="placeholderText">
-    <string>Enter subject you want to learn</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelLevel">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>120</y>
-     <width>140</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size: 14px; color: #1a3c57;</string>
-   </property>
-   <property name="text">
-    <string>Academic Level:</string>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboLevel">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>120</y>
-     <width>440</width>
-     <height>25</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelDate">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>160</y>
-     <width>140</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size: 14px; color: #1a3c57;</string>
-   </property>
-   <property name="text">
-    <string>Date and Time:</string>
-   </property>
-  </widget>
-  <widget class="QDateTimeEdit" name="dateTimeEdit">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>160</y>
-     <width>440</width>
-     <height>25</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnViewResults">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>200</y>
-     <width>120</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: #0077b6; color: white; border-radius: 5px; font-size: 12px;</string>
-   </property>
-   <property name="text">
-    <string>View Results</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="labelAvailableTutors">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>240</y>
-     <width>200</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font-size: 16px; font-weight: bold; color: #1a3c57;</string>
-   </property>
-   <property name="text">
-    <string>Available Tutors:</string>
-   </property>
-  </widget>
-  <widget class="QTableWidget" name="tableTutors">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>270</y>
-     <width>600</width>
-     <height>151</height>
-    </rect>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <column>
     <property name="text">
      <string>Tutor Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Student Name</string>
     </property>
    </column>
    <column>
@@ -169,36 +66,30 @@
    </column>
    <column>
     <property name="text">
-     <string>Education</string>
+     <string>Date</string>
     </property>
    </column>
    <column>
     <property name="text">
-     <string>Ratings</string>
+     <string>Time Slot</string>
     </property>
    </column>
-  </widget>
-  <widget class="QPushButton" name="btnBook">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>440</y>
-     <width>120</width>
-     <height>35</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: #2a9d8f; color: white; border-radius: 5px; font-size: 14px; font-weight: bold;</string>
-   </property>
-   <property name="text">
-    <string>Schedule Session</string>
-   </property>
+   <column>
+    <property name="text">
+     <string>Hours</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
   </widget>
   <widget class="QPushButton" name="btnViewResults_2">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>440</y>
+     <x>530</x>
+     <y>430</y>
      <width>120</width>
      <height>35</height>
     </rect>
@@ -207,7 +98,20 @@
     <string notr="true">background-color: #0077b6; color: white; border-radius: 5px; font-size: 14px;</string>
    </property>
    <property name="text">
-    <string>View Sessions</string>
+    <string>Give Feedback</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>390</y>
+     <width>611</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Note : If the Status is 'Completed', submit the feedback form </string>
    </property>
   </widget>
  </widget>
