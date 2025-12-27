@@ -1,6 +1,6 @@
 
 
-# CS-CE-355-373-Database-Project
+# CS-CE-355-373-Database-Systems-Project
 
 ## Team Members 
 - [Amna Ali](https://github.com/TheAmna)
