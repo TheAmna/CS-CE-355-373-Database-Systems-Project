@@ -17,80 +17,92 @@ Our project Tutorify is a community-driven online tutoring platform in Pakistan.
 	User A : Student 
 	User B : Tutor
   
--Module 1: Register and login
+- Module 1: Register and login
 
 	The system shall allow Students and Tutors to register an account and login.
   
--Module 2: Student Dashboard to search for tutor and view available tutors.
+- Module 2: Student Dashboard to search for tutor and view available tutors.
 
 	The system shall allow Student to enter requirement and search for tutor.
   
--Module 3: Tutor Dashboard to view profile and approve or complete sessions.
+- Module 3: Tutor Dashboard to view profile and approve or complete sessions.
 
     The system shall allow tutors to access their profile and manage sessions.
   
--Module 4: Session Management for both students and tutors.
+- Module 4: Session Management for both students and tutors.
 
 	The system shall allow both the Student and Tutor to see session status.
   
--Module 5: Feedback Form for students.
+- Module 5: Feedback Form for students.
 
 	The system shall allow students to submit feedback
 
 
+
+
 ## Entity Relationship Diagram 
 
-<img width="1000" height="900" alt="image" src="https://github.com/user-attachments/assets/b2907013-d5aa-4b38-add8-581a02c5c35a" />
+<img width="900" height="700" alt="image" src="https://github.com/user-attachments/assets/b2907013-d5aa-4b38-add8-581a02c5c35a" />
+
+
 
 
 ## Relation Schema 
 
 
-<img width="1000" height="900" alt="Screenshot 2025-11-09 143047" src="https://github.com/user-attachments/assets/857872d2-09c1-4268-a717-d8b530f10ad6" />
+<img width="900" height="700" alt="Screenshot 2025-11-09 143047" src="https://github.com/user-attachments/assets/857872d2-09c1-4268-a717-d8b530f10ad6" />
 
 
 
 ## Graphical User Interface (GUI)
 
-## Login Page of the Smart Home System 
 
 
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/980ae707-c453-4e4d-85dc-10c4dfb5656f" />
+### Welcome screen
 
-## Enter credentials
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/c472a148-706e-43e7-8f5f-314064ece296" />
 
-
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/bde7f7df-a2c3-4196-92ca-972752afefe3" />
-
-## All the devices in Kitchen 
+*Screen 1A : The system allows both student and tutor to choose to login or signup.*
 
 
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/6b8955fd-f513-4088-ba46-e43f0abd3074" />
+### Create Account
 
-## Kitchen thermostat 
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/b96d3952-048e-42bf-8053-e0479b183359" />
+
+*Screen 1B : The system allows both student and tutor to create an account first.*
+
+### Login 
+
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/acc07efa-1494-4b5f-b359-a154678f4037" />
+
+*Screen 1C : The system allows both student and tutor to login after creating an account.*
+
+### Student Dashboard  
+
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/28129fd3-f36c-47b0-820b-bbd7e67b906b" />
+
+*Screen 2A : Allows student to add search details, then view the search results to schedule session with tutor.*
+
+### Tutor Dashboard
+
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/f0ffa1ba-9dd0-465b-adb7-55da6285a454" />
+
+*Screen 3A : Allows tutor to view & update profile. Also allows to approves requested sessions from students.*
+
+### Session Management 
+
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/52194703-a584-43d7-8661-1201e3e9db75" />
+
+*Screen 4A : Allows students and tutors to view the status of the scheduled sessions. Status can be ‘approved’, ‘pending’, ‘completed’.*
 
 
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/a786a8b5-85cc-40fc-ad4a-2afc449c950c" />
-
-## Kitchen Light 
+### Feedback Form 
 
 
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/08aa09ea-3d13-42a5-a36e-17006ad0e96c" />
-
-## Kitchen camera 
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/888be2ea-a22e-4ab8-9d12-f60d49f0c41a" />
 
 
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/fd37a08a-4746-47d5-b3cf-e5a223d3b5fb" />
-
-## Display after clicking run all 
-
-
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/0cb841ea-0e1f-467a-9e9c-40664571b7a6" />
-
-## Display After Emergency Shutdown 
-
-
-<img width="200" height="450" alt="image" src="https://github.com/user-attachments/assets/83e1a985-8874-4e82-8759-ee39ab801ceb" />
+*Screen 5A : Allows students and tutors to give feedback after scheduled session takes place. Completes cycle.*
 
 
 
