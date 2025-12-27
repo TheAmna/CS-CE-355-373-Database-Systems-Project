@@ -247,6 +247,20 @@ WHERE tutor_id = 789
 ```
 
 
+## Challenges 
+
+- Initially we had multiple users like the student, admin, tutor, bank etc. However, Professor Umer Tariq instructed us to reduce the users to 2 so that a *closed loop* is established. This meant that the student searches for the tutor, the tutor approves/disapproves. Then the session happens based on instructors approval and the feedback is conducted. With admin in the loop, it meant that the admin was playing the main part leaving the student and tutor as *passive users*. So reducing it to student and tutor allowed them to play active part in the entire process.
+  
+- We had to revise the Entity Relation Diagram and the Relation Schema as per the feedback from our first presentation. The main hurdle was that I did not save my initial ERD design on draw.io. So I learnt the hard way to save my work and constantly create backups. Humna had a similar experience with the Schema on DBdesigner.com
+  
+
+
+## Key Learnings from this Project 
+
+- Whenever I used to purchase something online, I used to wonder about the technology behind all these systems. This project introduced me to the world of integrating front-end with back-end systems. It gave me hands-on-experience as I worked on the Graphical User Interface (GUI) on QTDesigner and combined it with Python and MSSQL Database.
+  
+- The process starts with the user selected the role: student or teacher. Based on the selection, the system proceeds forward. For student, the system displays the student dashboard. Student enters his requirement such as the subject, date/timing, educational level. He clicks on search. The click on the push button view schedules is integrated with Python code. At the back-end it the python code searches the MSSQL database, it finds the Tutor table and runs an SQL query to find the avaible tutors at that particular timing, teaching that course at that academic level. The Query result is then returned back and displayed in the table on the screen as the front-end display. It is amazing how all of this happens in milli seconds !
+The student then schedules the session and can proceed to the Session Management page where he can check the status of his scheduled session (pending, approved/completeted).
 
 
 
